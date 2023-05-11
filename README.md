@@ -1,21 +1,26 @@
 # Awesome 3D scanner list [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-A list of currently available 3D scanners, along with their specifications. We exhaustively serached for 3D scanners and contacted manufacturers for the details. A `.csv` of the same table is available in this repo.
+![awesome-3d-scanners](https://github.com/DavidBoja/awesome-3D-scanners/assets/32020857/6c84e2ab-0617-42ef-884e-0bf4ebca461c)
 
-<br>
 
-### Contributing
-If you are a 3D scanner manufacturer and:
-1. want to add your 3D scanner to the list
-2. want to correct some details
+A list of currently available 3D scanners, along with their specifications. We exhaustively serached for 3D scanners and contacted the manufacturers for the details. A `.csv` of the same table is available in this repo.
 
-please contact us or leave a Github issue on this repository.
+The listed specifications are:
+1. Manufacturer
+2. Scanner name
+3. Link to website
+4. Mobility / Size - describing the portability of the scanner (stationary, handheld,..)
+5. Method - describing the scanner system (Time-of-flight, structured-light, photogrammetry,..)
+6. Price in USD
+7. Resolution in mm
+8. Accuracy in mm
+9. No. Sens. - the number of sensors
+10. Dims. (cm) - the dimesnions of the scanner expressed as height x width x depth
+11. Texture - does the scanner reconstruct the texture?
+12. Scan. Time - average scanning time for a human body
 
-<br>
 
-### Citing
-If you find this list useful in your research, please cite the paper:
-
+For more specifications and details about them, please read (and cite) our paper:
 ```
 @ARTICLE{bartol-review-of-body-measurements-using-3d-scanning,
   author={Bartol, Kristijan and Bojanić, David and Petković, Tomislav and Pribanić, Tomislav},
@@ -28,3 +33,103 @@ If you find this list useful in your research, please cite the paper:
 ```
 
 <br>
+
+### Contributing
+If you are a 3D scanner manufacturer and:
+
+1. want to add your 3D scanner to the list
+2. want to correct some details
+
+please contact us or leave a Github issue on this repository.
+
+<br>
+
+| Manufact.         | Product                      | Link               | Mobility / Size | Method | Price ($) | Res. (mm) | Acc. (mm) | No. Sens. | Dims. (cm)    | Texture | Scan. Time |
+|-------------------|------------------------------|--------------------|-----------------|--------|------------|-----------|-----------|-----------|---------------|---------|------------|
+| SizeStream        | SS20                         | sizestream.com     | Stationary      | ToF    | from 15k   | -         | -         | 20        | 145x188x203   | Yes     | -          |
+| Vitronic          | Vitus                        | vitronic.com       | Stationary      | SL*    | 5k-10k     | -         | 1         | 8         | -             | Yes     | -          |
+| Texel             | Portal BX                    | texel.graphics     | Stationary      | SL*    | 31k        | 1         | -         | -         | 225×258       | Yes     | -          |
+|                   | Portal MX                    |                    | Stationary      | SL*    | 26k        | 1         | 1         | -         | 260×60×60     | Yes     | -          |
+| IBV               | Move4D                       | ibv.org            | Stationary      | PS     | -          | 1         | -         | 12+       | 200x200x300   | Yes     | -          |
+| Artec             | ArtecLeo                     | artec3d.com        | Handheld        | SL     | 29.8k      | 0.2       | 0.1       | 3         | 23.1x16.2x23  | Yes     | -          |
+|                   | Artec Eva                    |                    | Handheld        | SL     | 19.8k      | 0.2       | 0.1       | 3         | 26.2x15.8x6.3 | Yes     | -          |
+|                   | Artec Eva Lite               |                    | Handheld        | SL     | 9800       | 0.5       | 0.1       | 2         | 26.2x15.8x6.3 | No      | -          |
+|                   | Artec Space Spider           |                    | Handheld        | SL     | 24.8k      | 0.1       | 0.05      | 5         | 19x14x13      | Yes     | -          |
+|                   | Shapify Booth                |                    | Stationary      | SL     | 180k       | 1.5       | 0.25      | 12        | 330x330x280   | Yes     | 12 s       |
+| Thor3D            | Calibry                      | thor3dscanner.com  | Handheld        | SL     | 5790       | 0.6       | 0.1       | 5         | 16.5x8.5x27.3 | Yes     | 60 s       |
+| Fit3D             | Fit3D                        | fit3d.com          | Stationary      | PS     | 10k        | -         | -         | 3         | -             | -       | -          |
+| Styku             | Styku S100                   | styku.com          | Stationary      | ToF    | 10k        | -         | -         | -         | 254x254x117   | No      | -          |
+| Revopoint3D       | Handysense                   | revopoint3d.com    | Handheld        | SL     | 3000       | 0.3       | 0.1       | 3         | 21.5x12x33.6  | Yes     | 300 s      |
+|                   | Acusense A1                  |                    | Mini            | SL     | 1000       | -         | 0.1-1     | 3         | 15x25x38      | Yes     | -          |
+| Apple             | iPhone 12 Pro Lidar          |                    | Mini            | ToF    | 999        | -         | -         |           |               |         | -          |
+| HP                | HP Pro S3                    | hp.com             | Stationary      | SL     | 3400       | 0.05      | -         | 2         | -             | Yes     | -          |
+| DexaFit           | DexaFit                      | dexafit.com        | Stationary      | SL     | -          | -         | -         | -         | -             | No      | -          |
+| botspot           | botscan Neo                  | botspot.de         | Stationary      | SL     | -          | 0.1       | -         | 120       | 305×246       | Yes     | -          |
+|                   | botscan Pro S                |                    | Stationary      | SL     | -          | 0.2       | -         | 300       | 355x2600      | Yes     | -          |
+|                   | botscan Cargo                |                    | Stationary      | SL     | -          | 0.2       | -         | 70        | 605x243x259   | Yes     | -          |
+|                   | OptaOne+                     |                    | Stationary      | SL     | 10k- 50k   | 0.2       | -         | 68        | 314x254       | Yes     | -          |
+| 3dMD              | 3dMDBody                     | 3dmd.com           | Stationary      | PS     | -          | 0.7       | -         | 78+       | -             | Yes     | -          |
+|                   | 3dMDflex                     |                    | Stationary      | PS     | 20k- 50k   | -         | 0.2       | 27        | -             | Yes     | -          |
+| TechMed3D         | BodyScan Scanner             | techmed3d.com      | Handheld        | SL     | -          | -         | -         | 2         | -             | Yes     | -          |
+| 4DDynamics        | IIID Body                    | 4ddynamics.com     | Stationary      | SL     | -          | -         | 0.5       | 10        | 170x170x210   | -       | -          |
+|                   | IIID Trailer                 |                    | Stationary      | SL     | -          | -         | -         | -         | -             | -       | -          |
+|                   | IIID ScanBooth               |                    | Stationary      | SL     | -          | -         | -         | -         | 170x170x170   | -       | -          |
+|                   | Memphisto EOS                |                    | Stationary      | SL     | -          | -         | -         | 2         | -             | -       | -          |
+|                   | Memphisto EX                 |                    | Stationary      | SL     | -          | -         | -         | 3         | -             | -       | -          |
+|                   | Pico                         |                    | Stationary      | SL     | -          | -         | -         | 2         | -             | -       | -          |
+|                   | Pico Pro                     |                    | Stationary      | SL     | -          | -         | -         | 2         | -             | -       | -          |
+|                   | Gotcha                       |                    | Handheld        | SL     | -          | -         | -         | 3         | -             | -       | -          |
+|                   | Gotcha Pro                   |                    | Handheld        | SL     | -          | -         | -         | 3         | -             | -       | -          |
+| Shape Labs        | ShapeScale                   | shapescale.com     | Stationary      | SL     | 499        | 3.1       | 1.58      | 3         | 120x145       | Yes     | 60 s       |
+| Naked Labs        | Naked                        | nakedlabs.com      | Stationary      | ToF    | 1395       | -         | 5         | 3         | 158x30x30     | No      | 20 s       |
+| mPort Ltd.        | mPod                         | mport.com          | Stationary      | SL     | -          | -         | 10        | -         | -             | No      | -          |
+| Telemat Industrie | Symcad II ST                 | telmat.fr          | Stationary      | SL     | 44k        | -         | -         | 4         | 402x160x235   | -       | -          |
+|                   | Symcad II HD                 |                    | Stationary      | SL     | 31.3k      | -         | -         | 4         | 358x134x230   | -       | -          |
+|                   | Symcad III                   |                    | Stationary      | SL     | 15.9k      | -         | -         | 16        | 190x173x210   | -       | -          |
+| TC2 Labs   | TC2-105                      | tc2.com            | Stationary      | SL     | 100k- 250k | 0.7       | 0.1       | -         | -             | Yes     | -          |
+|                   | TC2-30R                      |                    | Stationary      | ToF    | -          | 2         | -         | -         | 177x102       | Yes     | -          |
+|                   | TC2-19M                      |                    | Stationary      | ToF    | -          | 1         | -         | -         | -             | -       | -          |
+|                   | TC2-21B                      |                    | Stationary      | PS     | 30k        | -         | -         | -         | -             | -       | -          |
+|                   | TC2-19R                      |                    | Stationary      | ToF    | 1k- 10k    | -         | -         | -         | -             | -       | -          |
+|                   | TC2-19B                      |                    | Stationary      | ToF    | -          | -         | -         | -         | -             | -       | -          |
+| Spacevision       | SCUVEG4-Portable             | spacevision.tokyo  | Stationary      | -      | 50k- 100k  | -         | 2         | -         | 205x60x80     | -       | -          |
+|                   | SCUVEG4-Flex                 |                    | Stationary      | -      | 50k- 100k  | -         | 2         | -         | 205x60x80     | -       | -          |
+| QuantaCorp        | Shapewatch                   | quantacorp.io      | Stationary      | PS     | -          | -         | -         | -         | -             | -       | -          |
+| Mantis Vision     | Studio 3iosk                 | mantis-vision.com  | Stationary      | PS     | 30k        | -         | -         | 15        | 250x247       | Yes     | -          |
+|                   | Studio 3iosk XT              |                    | Stationary      | PS     | -          | -         | -         | 16        | 250x247       | Yes     | -          |
+|                   | F6 SR                        |                    | Handheld        | SL     | 10k- 50k   | 0.4       | 0.1       | 3         | -             | Yes     | -          |
+|                   | F6 Smart                     |                    | Handheld        | SL     | 10k- 50k   | 0.4       | 0.5       | 3         | -             | Yes     | -          |
+| TG3D Studio       | TG 2000-F                    | tg3ds.com          | Stationary      | SL*    | from 15k   | -         | -         | -         | 152x132x202   | -       | -          |
+| GOM               | ATOS Q                       | gom.com            | Handheld        | SL     | from 60k   | 0.03      | -         | 3         | 34x24x8.3     | No      | -          |
+| ScanTech          | KScan 20                     | 3d-scantech.com    | Handheld        | SL     | from 40k   | 0.01      | 0.02      | 6         | -             | No      | -          |
+|                   | KScan Magic II               |                    | Handheld        | SL     | from 40k   | 0.01      | 0.02      | -         | -             | No      | -          |
+|                   | Prince 775                   |                    | Handheld        | SL     | from 40k   | 0.02      | 0.03      | -         | 31x16x10      | No      | -          |
+|                   | HScan 771                    |                    | Handheld        | SL     | from 40k   | 0.05      | 0.03      | -         | 31x16x10      | No      | -          |
+|                   | Axe B17                      |                    | Handheld        | SL     | from 40k   | 0.025     | 0.02      | -         | -             | No      | -          |
+|                   | IReal 2E                     |                    | Handheld        | SL     | 4980       | 3         | 0.1       | 9         | 14x9.4x25.8   | Yes     | -          |
+| Hexagon           | Aicon Primescan              | hexagonmi.com      | Stationary      | SL     | 35k        | 0.016     | 0.016     | 3         | 300x210x175   | No      | -          |
+| EvixScan3D        | Heavy Duty Basic             | evixscan3d.com     | Stationary      | SL     | 10k- 50k   | -         | 0.02      | 3         | 430x220x65    | Yes     | -          |
+|                   | Heavy Duty Optima            |                    | Stationary      | SL     | 10k- 50k   | -         | 0.0183    | 3         | 430x220x65    | Yes     | -          |
+|                   | Heavy Duty Quadro            |                    | Stationary      | SL     | 10k- 50k   | -         | 0.013     | 5         | 520x280x95    | Yes     | -          |
+| Polyga            | Carbon                       | polyga.com         | Stationary      | SL     | 14.9k      | 0.362     | 0.05      | 2         | 13x41x12      | Yes     | 1.2 s      |
+|                   | Compact L6                   |                    | Stationary      | SL     | 11.9k      | 0.18      | 0.08      | 2         | 5.5x12.9x40   | Yes     | 1.2 s      |
+|                   | Polyga H3                    |                    | Handheld        | SL     | 9990       | 0.5       | 0.08      | 2         | 28x20x6       | Yes     | -          |
+| Shining 3D        | Freescan X7                  | shining3d.com      | Handheld        | SL*    | -          | 0.05      | 0.03      | 2         | 13x9x31       | No      | -          |
+|                   | EinscanPro 2X                |                    | Handheld        | SL     | 5499       | 0.2       | 0.04      | 3         | 37x36.5x13.5  | Yes     | -          |
+|                   | EinscanPro 2X Plus           |                    | Handheld        | SL     | 6899       | 0.2       | 0.04      | 3         | 37x36.5x13.5  | Yes     | -          |
+|                   | Einscan H                    |                    | Handheld        | SL     |            | 3         | 0.05      | -         | 10.8x11x23.7  | Yes     | -          |
+| Peel 3D           | Peel 1                       | peel-3d.com        | Handheld        | SL     | 5990       | 0.5       | 0.25      | 2         | 9.6x14x25.8   | No      | 90 s       |
+|                   | Peel 2                       |                    | Handheld        | SL     | 7690       | 0.5       | 0.25      | 4         | 15x17.1x25.1  | Yes     | 90 s       |
+| Faro              | Freestyle3D                  | faro.com           | Handheld        | SL*    | 10k- 20k   | 0.2       | 1.5       | -         | 260x310x105   | Yes     | -          |
+|                   | Freestyle3D X                |                    | Handheld        | SL*    | 10k- 50k   | 0.2       | 1         | -         | 26x31x10.5    | Yes     | -          |
+| Creaform          | GO!Scan Spark                | creaform3d.com     | Handheld        | SL     | 39.9k      | 0.2       | 0.05      | -         | 8.9x11.4x34.6 | Yes     | -          |
+|                   | HandyScan Black              |                    | Handheld        | SL*    | 50k- 100k  | 0.1       | 0.035     | 9         | 14.2x7.9x28.8 | No      | -          |
+|                   | HandyScan Black Elite        |                    | Handheld        | SL*    | 50k- 100k  | 0.025     | 0.025     | 11        | 14.2x7.9x28.8 | No      | -          |
+| Occipital         | Structure Sensor             | structure.io       | Mini            | SL     | 379        | -         | -         | 3         | -             | Yes     | -          |
+| BodyGee           | Orbiter                      | bodygee.com        | Stationary      | ToF    | -          | -         | -         | -         | -             | Yes     | 90 s       |
+|                   | Boxx                         |                    | Stationary      | ToF    | -          | -         | -         | -         | -             | Yes     | -          |
+| Intel             | RealSense LiDAR Camera L515  | intelrealsense.com | Mini            | ToF    | 349        | -         | 14        | 2         | 6.1x2.6       | -       | -          |
+|                   | RealSense Depth Camera D455  |                    | Mini            | PS     | 239        | -         | -         | 3         | 12.4x2.6x2.9  | No      | -          |
+|                   | RealSense Depth Camera D435i |                    | Mini            | PS     | 179        | -         | -         | 4         | 9x2.5x2.5     | No      | -          |
+|                   | RealSense Depth Camera D415  |                    | Mini            | PS     | 149        | -         | -         | 3         | 9.9x2x2.3     | No      | -          |
+
