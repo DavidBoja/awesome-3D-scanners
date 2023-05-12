@@ -3,7 +3,7 @@
 ![awesome-3d-scanners](https://github.com/DavidBoja/awesome-3D-scanners/assets/32020857/6c84e2ab-0617-42ef-884e-0bf4ebca461c)
 
 
-A list of currently available 3D scanners, along with their specifications. We exhaustively serached for 3D scanners and contacted the manufacturers for the details. A `.csv` of the same table is available in this repo.
+A list of currently available 3D scanners, along with their specifications. We exhaustively serached for 3D scanners and contacted the manufacturers for the specification details. A `.csv` of the same table listed below is available in this repo.
 
 The listed specifications are:
 1. Manufacturer
@@ -20,7 +20,7 @@ The listed specifications are:
 12. Scan. Time - average scanning time for a human body
 
 
-For more specifications and details about them, please read (and cite) our paper:
+For more specifications and details about the specifications, please read (and cite) our paper:
 ```
 @ARTICLE{bartol-review-of-body-measurements-using-3d-scanning,
   author={Bartol, Kristijan and Bojanić, David and Petković, Tomislav and Pribanić, Tomislav},
@@ -35,8 +35,11 @@ For more specifications and details about them, please read (and cite) our paper
 <br>
 
 ### Contributing
-If you are a 3D scanner manufacturer and:
+If you:
+1. have more information about a 3D scanner from the list
+2. know a 3D scanner that is missing from the list
 
+Or you are a 3D scanner manufacturer and:
 1. want to add your 3D scanner to the list
 2. want to correct some details
 
