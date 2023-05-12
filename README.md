@@ -1,6 +1,6 @@
 # Awesome 3D scanner list [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-![awesome-3d-scanners](https://github.com/DavidBoja/awesome-3D-scanners/assets/32020857/6c84e2ab-0617-42ef-884e-0bf4ebca461c)
+![awesome-3d-scanners](awesome-3d-scanners.png)
 
 
 A list of currently available 3D scanners, along with their specifications. We exhaustively serached for 3D scanners and contacted the manufacturers for the specification details. A `.csv` of the same table listed below is available in this repo.
